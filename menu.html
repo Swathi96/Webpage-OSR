@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet"> !-->
+      <!--Import materialize.css-->
+     <!-- <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>!-->
+      <title>Menu Page</title>
+      <link rel="stylesheet" type="text/css" href="menu.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <!--<ul class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+    <nav>
+      <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">About Us</a></li>
+        <li><a class="dropdown" href="contact.asp">Menu</a></li>
+        <li><a href="about.asp">Contact Us</a></li>
+        <li><a href="default.asp">Gallery</a></li>
+        <li><a href="default.asp">Reviews</a></li>
+      </ul> 
+    </nav>!-->
+    <div class="container">
+      <a href="#home">HOME</a>
+      <a href="#news">ABOUT US</a>
+      <div class="dropdown">
+        <button class="dropbtn">MENU &#x25BE;</button>
+        <div class="dropdown-content">
+          <a href="#">Andhra Delicacies</a>
+          <a href="#">Mangalorean Cuisine</a>
+          <a href="#">Tandoor Delicacies</a>
+          <a href="#">Indian Breads</a>
+          <a href="#">North Indian</a>
+          <a href="#">Chineese</a>
+          <a href="#">Royal Indulgence</a>
+        </div>
+      </div>
+      <a href="osrmap.html">CONTACT US</a> 
+      <a href="#news">GALLERY</a>
+      <a href="#news">REVIEW</a>
+    </div>
+    <div class="header">
+      <h2>INDIAN BREADS</h2>
+    </div>
+    <div class="tab">
+      <h3>MENU</h3>
+      <button class="tablinks active" onclick="openCity(event, 'Roti')">Rotis</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Naan</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Kulcha</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Paratha</button>
+    </div>
+    <div id="Roti" class="tabcontent">
+     <h4>ROTIS</h4>
+     <hr>
+     <div class="items">
+      <div class="image"> 
+      </div>
+      <div class="content">
+        <div class="heading">
+          <h5>Roti</h5>
+        </div>
+        <div class="cost">
+          <h5>250</h5>
+        </div>
+        <div class="deliveryCost">
+          <h5>Delivery Cost:25</h5>
+        </div>
+        <a href="#" class="btn">ORDER</a>
+      </div>
+     </div>
+     <hr>
+    </div>
+    <div class="ordering">
+    <h4 id="font">YOUR ORDER</h4>
+    <hr>
+    </div>
+    <div id="Naan" class="tabcontent hide">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+    <div id="Tokyo" class="tabcontent hide">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+  </body>
+</html>
+        

@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto',sans-serif;
+ // background: white;
+}
+#row
+{
+  width: 100%;
+  height: 50%;
+  /*border: 1px solid black;*/
+  position: relative;
+  margin-bottom: 30px;
+}
+.food
+{
+  width: 45%;
+  height: 100%;
+  margin-left: 40px;
+  border: 1px solid black;
+  float: left;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
+}
+.food > .cover
+{
+  position: relative;
+  height: 230px;
+  background: transparent center no-repeat;
+  background-size: 100% auto;
+  border-radius: 2px 2px 0 0;
+}
+.food > .cover > label
+{
+  position: absolute;
+  top: 15px;
+  left: -33px;
+  height: 33px;
+  padding: 0 30px 0 63px;
+  line-height: 33px;
+  vertical-align: middle;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-shadow: 0 1px 2px #000;
+  background: rgba(98, 110, 96, .6);
+}
+.food > .cover > label > i
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.food > .cover > label > i > svg
+{
+  margin: 8px;
+}
+.food > .info
+{
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 0 0 2px 2px;
+}
+
+.food > .info > .recipe
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 134px;
+  height: 100px;
+  background: #626E60;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0 0 0 2px;
+}
+
+.food > .info > .recipe:hover { background: #626E57 }
+
+.food > .info > .recipe > i
+{
+  display: block;
+  margin: 38px 0 15px;
+}
+
+.food > .info > .content
+{
+  position: absolute;
+  top:10px;
+  right: 20px;
+  bottom: 20px;
+  left: 154px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #888;
+}
+
+.food > .info > .content h1
+{
+  margin: 0 0 0px;
+  font-size: 26px;
+  font-weight: normal;
+  color: #333;
+}
+
+.food > .info > .content .border-right { border-right: 1px solid #D9D9D9 }
+.food > .info > .content .stars, .food > .info > .content .stars > em
+{
+  display: block;
+  width: 99px;
+  height: 10px;
+  margin: 0 0 0px;
+  text-align: right;
+  background: url(http://c.boylett.uk/generic/image_png_00004.png);
+}
+
+.food > .info > .content .stars > em
+{
+  width: 99px;
+  height: 18px;
+  margin: 0;
+  background: url(http://c.boylett.uk/generic/image_png_00004.png);
+  background-position: 0 -18px;
+}
+.food > .info > .recipeDetail
+{
+  width:300px;
+}

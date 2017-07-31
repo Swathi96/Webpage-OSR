@@ -1,0 +1,93 @@
+
+<html>
+  <head>
+   <!--Import social media buttons-->
+   <link rel="shortcut icon" href="http://www.elluminati.in/wp-content/uploads/2016/07/favicon.png">
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet"> !-->
+      <!--Import materialize.css-->
+     <!-- <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>!-->
+      <title>Contact Us</title>
+      <link rel="stylesheet" type="text/css" href="contactus.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+    <style>
+       #map {
+        height: 250px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+	<div class="container">
+      <a href="#home">HOME</a>
+      <a href="#news">ABOUT US</a>
+      <div class="dropdown">
+        <button class="dropbtn">MENU &#x25BE;</button>
+        <div class="dropdown-content">
+          <a href="#">Andhra Delicacies</a>
+          <a href="#">Mangalorean Cuisine</a>
+          <a href="#">Tandoor Delicacies</a>
+          <a href="#">Indian Breads</a>
+          <a href="#">North Indian</a>
+          <a href="#">Chineese</a>
+          <a href="#">Royal Indulgence</a>
+        </div>
+      </div>
+      <a href="osrmap.html">CONTACT US</a> 
+      <a href="#news">GALLERY</a>
+      <a href="#news">REVIEW</a>
+    </div>
+    <div class="locate">
+    <h3>LOCATE US</h3>
+    </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var osr = {lat: 12.905756, lng: 77.521010};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: osr
+        });
+		google.maps.event.addDomListener(window, "resize", function() {
+   var center = map.getCenter();
+   google.maps.event.trigger(map, "resize");
+   map.setCenter(center); 
+});
+        var marker = new google.maps.Marker({
+          position: osr,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT30pNXw4LmRIQ5Ls19yUSyKZv1mDoEbw&callback=initMap">
+    </script>
+	
+	<div id="row"><!--represents each row which contains 2 cards!-->
+	<div class="stay">
+	<h3>STAY CONNECTED</h3> 
+	<div class="Social"><!--represents each cards!-->
+	<!-- Add font awesome icons -->
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+    </div>
+    </div>
+    <div class="contact">
+	<h3>CONTACT</h3>
+		<i class="fa fa-map-marker"></i>
+		<span class="w-contacts-item-value">60 Feet Road, Near-BMTC Depot, BEML Layout, RR Nagar, Bengaluru, Karnataka 560098</span><br>
+		<i class="fa fa-phone"></i>
+		<span class="w-contacts-item-value" style="padding-right:0px;">080 2861 2171</span>
+    </div>
+ 
+</div>
+  </body>
+  
+  
+  
+</html>

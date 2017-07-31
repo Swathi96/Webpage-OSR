@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Chewy|Fjalla+One|Permanent+Marker|Shadows+Into+Light|UnifrakturCook:700');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Carter+One|Luckiest+Guy');
+body{
+	margin: 0;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 27%;
+    padding-right: 27%;
+}
+li {
+    float: left;
+    padding-right: 3%;
+}
+
+a {
+    display: block;
+    padding: 4px;
+}
+nav {
+  color: #fff;
+  background-color: #945D60;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+li a{
+	text-decoration: none;
+	color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #945D59;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover {
+    background-color: #945D59;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}*/
+.container {
+    overflow: hidden;
+    width: 100%;
+    height: 48px;
+    background-color: #945D60;
+    font-family: Arial;
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: auto;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #945D45;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #945D60;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.header{
+	width: 100%;
+	height: 300px;
+	background: url(http://www.whatshelikes.in/wp-content/uploads/2014/06/indian-naan-roti-type.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;
+	text-align: center;
+	color: #3C3C3C;
+    /*font-family: 'UnifrakturCook';
+    font-size: 100px;*/
+}
+h2{
+	font-family: 'Carter One', cursive;
+    font-size: 90px;
+}
+ /* Style the tab */
+div.tab {
+	margin-top: 3px;
+    float: left;
+    background-color: #945D60;
+    width: 20%;
+    height: 700px;
+    padding:25px 0px 25px 25px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    width: 85%;
+    height: 30px;
+    border:none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    /*transition: 0.3s;*/
+    margin-bottom: 5px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #4f4f4f;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #3C3C3C;
+    border-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	margin-top: 3px;
+	overflow: auto;
+    overflow-y: hidden;
+	margin-top: 0;
+    float: left;
+    /*border: 1px solid #ccc;*/
+    width: 60%;
+    height: 300px;
+}
+.hide
+{
+	display: none;
+}
+h3{
+    font-family: 'Fjalla One', sans-serif;
+	color: white;
+}
+.items{
+    margin-top: 3px;
+    margin-left: 5px;
+	max-width:100%;
+	height: 200px;	
+	overflow:hidden;
+    overflow-x: hidden;
+}
+.image{
+    float: left;
+    margin: 2px;
+    height: 95%;
+    width: 25%;
+    border: 1px solid black;
+}
+h4{
+    margin-left: 10px;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: 'Permanent Marker', cursive;
+    color: #AF473C;
+}
+.content{
+    float:right;
+    height: 100%;
+    width:74%;
+}
+h5{
+    padding-left: 5px;
+    padding-top: 10px;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+    color: #626E60;
+}
+.heading{
+    float: left;
+    width:55%;
+    height: 20%;
+}
+.cost{
+    float: right;
+    width: 25%;
+    height: 20%;
+}
+.deliveryCost{
+    padding-top: 50px;
+    float: left;
+    width: 55%;
+    height: 35%;
+    position: relative;
+    top:75px;
+}
+.btn{
+    float: right;
+    height: 8%;
+    position: relative;
+    top: 112px;
+    right: 35px;
+    background-color: #AF473C;
+    border:none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #9d3f36;
+}
+.btn:after {
+    content: "";
+    background: #AF473C;
+    display: block;
+    position: absolute;
+    padding-top: 55%;
+    padding-left: 120%;
+    margin-left: -32px!important;
+    margin-top: -40%;
+    margin-bottom:;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.ordering{
+    float: right;
+    height:700px;
+    width: 17%;
+    border-left: .7px solid #ccc;
+    padding-top: 2px;
+}
+hr{
+    border-top: .8px;
+    margin-left: 10px;
+}
+#font{
+    font-size: 23px;
+}
